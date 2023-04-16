@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-fond {
+    height: 60vh;
+    width: 100%;
+    background-color: #001C4C;
+}
+
+@media screen and (max-width: 590px) {
+    .div-fond {
+        height: 78vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .div-fond {
+        height: 75vh;
+    }
+}
+
+.fond {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    display: block;
+}
+
+.title {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    margin: auto;
+    color: white;
+    font-family: 'Itim', cursive;
+    animation: 1.5S linear bienvenue;
+}
+
+.text-bienvenue {
+    display: flex;
+    position: relative;
+    color: white;
+    top: 30%;
+    margin-left: 5%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    animation: 1.5S text ease;
+}
+
+@keyframes bienvenue {
+    0% {
+        opacity: 0%;
+        transform: translate(0px, 15px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0%;
+        transform: translate(-700px, 0px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+}
+
+iframe {
+    display: flex;
+    position: relative;
+    left: 55%;
+    top: 70px;
+}
+
+@media screen and (max-width: 1142px) {
+    iframe {
+        left: 10%;
+        top: 250px;
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    iframe {
+        left: 20%;
+        top: 250px;
+        width: 250px;
+        height: 200px;
+    }
+}
+
+#page-2 {
+    margin-top: 40vh;
+    /* background-color: red; */
+    height: 100vh;
+    width: 100%;
+}
+
+.title2 {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    margin: auto;
+    color: black;
+    font-family: 'Itim', cursive;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out,
+        opacity 1.2s ease-in-out;
+}
+
+.title2.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.para-page2 {
+    margin-top: 40px;
+    margin-left: 8%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.para-page2.active2 {
+    opacity: 1;
+}
+
+.logo-insta {
+    color: black;
+    width: 20px;
+    margin-right: 7px;
+    margin-left: 10%;
+    margin-top: -2px;
+}
+
+.text-insta {
+    color: black;
+    text-decoration: none;
+    background: -webkit-linear-gradient(153deg, rgba(129, 9, 238, 1) 0%, rgba(255, 198, 0, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.total-insta {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+
+.total-insta.active2bis {
+    opacity: 1;
+}
+
+.type {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translate(800px, 0px);
+    font-family: 'Itim', cursive;
+    transition: opacity 1.5s ease,
+        transform 1.5s ease;
+}
+
+.type.active3 {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.container-categ {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    transform: translate(-1400px, 0px);
+    transition: 1.5s ease;
+}
+
+.container-categ.active4 {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+@media screen and (max-width: 500px) {
+    .container-categ {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.VTT {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 2.5px solid #001C4C;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: all 0.7s ease;
+}
+
+.VTT:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+.VTT a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.VTT img {
+    width: 100%;
+    border-radius: 50px;
+    bottom: 10px;
+}
+
+.route {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 2.5px solid #001C4C;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: all 0.7s ease;
+}
+
+.route:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.route img {
+    width: 80%;
+    border-radius: 50px;
+    bottom: 10px;
+}
+
+.route a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.BMX {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 2.5px solid #001C4C;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: all 0.7s ease;
+}
+
+.BMX:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+.BMX a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.BMX img {
+    width: 100%;
+    border-radius: 50px;
+    bottom: 10px;
+}

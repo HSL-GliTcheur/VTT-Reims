@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="velo, reims, vtt, rassemblement">
+    <title>VTT Reims - accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="VTT Reims2.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="div-fond">
+        <img src="wave2.svg" class="fond">
+        <h1 class="title">passion VTT Reims</h1>
+        <p class="text-bienvenue">Bienvenue <br>
+            Viens nous rejoindre entre passionné de VTT</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41667.25378843015!2d4.020088626117706!3d49.25359128128911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e974334a533b09%3A0x40a5fb99a3b45c0!2s51100%20Reims!5e0!3m2!1sfr!2sfr!4v1676040821031!5m2!1sfr!2sfr"
+            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section id="page-2">
+        <h1 class="title2">Comment nous rejoindre</h1>
+        <p class="para-page2">Vous pouvez nous trouver sur les résaux comme : </p>
+
+        <div class="total-insta">
+            <a href="https://www.instagram.com" target="_blank" class="logo-insta"><img src="instagram.svg"
+                    alt="instagram" class="logo-insta"></a>
+            <a href="https://www.instagram.com" target="_blank" class="text-insta">Instagram</a>
+        </div>
+
+        <h1 class="type">Ton type de vélo</h1>
+        <div class="container-categ">
+
+            <div class="VTT"><a href="VTT.html">VTT <br><img
+                        src="https://cdn.pixabay.com/photo/2013/07/13/14/05/mtb-bike-162107_640.png" alt="VTT"></a>
+            </div>
+
+            <div class="route"><a href="Route.html">Route <br><img src="Route.png" alt="VTT"></a></div>
+
+            <div class="BMX"><a href="BMX.html">BMX <br><img src="BMX.png" alt="VTT"></a></div>
+
+        </div>
+    </section>
+
+
+    <script>
+        const title2 = document.querySelector(".title2");
+        const totalInsta = document.querySelector(".total-insta");
+
+        window.addEventListener("scroll", () => {
+            const { scrollTop, clientHeight } = document.documentElement;
+
+            // console.log(scrollTop, clientHeight);
+
+            const topElementToTopViewport = title2.getBoundingClientRect().top;
+
+            //   console.log(topElementToTopViewport);
+
+            if (
+                scrollTop >
+                (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.6
+            ) {
+                title2.classList.add("active");
+            }
+        });
+
+        const paraPage2 = document.querySelector(".para-page2");
+
+        window.addEventListener("scroll", () => {
+            const { scrollTop, clientHeight } = document.documentElement;
+
+            // console.log(scrollTop, clientHeight);
+
+            const topElementToTopViewport = paraPage2.getBoundingClientRect().top;
+
+            //   console.log(topElementToTopViewport);
+
+            if (
+                scrollTop >
+                (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.6
+            ) {
+                paraPage2.classList.add("active2");
+                totalInsta.classList.add("active2bis");
+            }
+        });
+
+        const type = document.querySelector(".type");
+
+        window.addEventListener("scroll", () => {
+            const { scrollTop, clientHeight } = document.documentElement;
+
+            // console.log(scrollTop, clientHeight);
+
+            const topElementToTopViewport = type.getBoundingClientRect().top;
+
+            //   console.log(topElementToTopViewport);
+
+            if (
+                scrollTop >
+                (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.6
+            ) {
+                type.classList.add("active3");
+            }
+        });
+
+        const containerCateg = document.querySelector(".container-categ");
+
+        window.addEventListener("scroll", () => {
+            const { scrollTop, clientHeight } = document.documentElement;
+
+            // console.log(scrollTop, clientHeight);
+
+            const topElementToTopViewport = containerCateg.getBoundingClientRect().top;
+
+            //   console.log(topElementToTopViewport);
+
+            if (
+                scrollTop >
+                (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.6
+            ) {
+                containerCateg.classList.add("active4");
+            }
+        });
+    </script>
+</body>
+
+</html>
